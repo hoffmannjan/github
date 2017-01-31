@@ -3402,19 +3402,6 @@ var User = function (_Requestable) {
       }
 
       /**
-       * List the user's gists
-       * @see https://developer.github.com/v3/gists/#list-a-users-gists
-       * @param {Requestable.callback} [cb] - will receive the list of gists
-       * @return {Promise} - the promise for the http request
-       */
-
-   }, {
-      key: 'listStarredGists',
-      value: function listStarredGists(cb) {
-         return this._request('GET', this.__getScopedUrl('gists'), null, cb);
-      }
-
-      /**
        * List the user's notifications
        * @see https://developer.github.com/v3/activity/notifications/#list-your-notifications
        * @param {Object} [options={}] - any options to refine the search
